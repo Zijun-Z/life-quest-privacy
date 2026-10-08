@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Life Quest</title>
+<meta name="description" content="Life Quest privacy policy: local app data and third-party advertising disclosures.">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#2f6bff">
+<style>
+  :root{
+    --ink:#1a2233;
+    --muted:#5b6478;
+    --line:#e4e8f0;
+    --accent:#2f6bff;
+    --accent-soft:#eef3ff;
+    --soft:#f7f9fc;
+    --radius:14px;
+  }
+  *,*::before,*::after{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;
+    background:#fff;
+    color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size:16px;
+    line-height:1.75;
+    -webkit-text-size-adjust:100%;
+    text-rendering:optimizeLegibility;
+  }
+  a{color:var(--accent);text-decoration:none}
+  a:hover{text-decoration:underline}
+
+  .container{max-width:1120px;margin:0 auto;padding:0 24px}
+
+  /* ---------- Header ---------- */
+  .site-header{
+    border-bottom:1px solid var(--line);
+    background:linear-gradient(180deg,#fbfcff 0%,#ffffff 100%);
+    padding:56px 0 40px;
+  }
+  .brand{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    font-weight:700;
+    font-size:15px;
+    letter-spacing:.02em;
+    color:var(--ink);
+    margin-bottom:20px;
+  }
+  .brand-dot{
+    width:10px;height:10px;border-radius:50%;
+    background:var(--accent);
+    display:inline-block;
+  }
+  .site-header h1{
+    margin:0 0 14px;
+    font-size:clamp(28px,4.2vw,42px);
+    line-height:1.25;
+    letter-spacing:-0.01em;
+    font-weight:800;
+  }
+  .meta{
+    margin:0;
+    color:var(--muted);
+    font-size:14.5px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:6px 18px;
+  }
+  .meta span{white-space:nowrap}
+
+  /* ---------- Layout ---------- */
+  .layout{
+    display:grid;
+    grid-template-columns:250px minmax(0,1fr);
+    gap:56px;
+    padding-top:44px;
+    padding-bottom:80px;
+    align-items:start;
+  }
+
+  /* ---------- TOC ---------- */
+  .toc{
+    position:sticky;
+    top:24px;
+    font-size:14.5px;
+  }
+  .toc h2{
+    font-size:12px;
+    text-transform:uppercase;
+    letter-spacing:.10em;
+    color:var(--muted);
+    margin:0 0 14px;
+    font-weight:700;
+  }
+  .toc ol{
+    list-style:none;
+    margin:0;padding:0;
+    counter-reset:toc;
+    border-left:2px solid var(--line);
+  }
+  .toc li{counter-increment:toc;margin:0}
+  .toc a{
+    display:block;
+    padding:7px 0 7px 16px;
+    margin-left:-2px;
+    border-left:2px solid transparent;
+    color:var(--muted);
+    line-height:1.5;
+  }
+  .toc a::before{
+    content:counter(toc) ". ";
+    color:#a9b2c4;
+    font-variant-numeric:tabular-nums;
+  }
+  .toc a:hover{
+    color:var(--ink);
+    text-decoration:none;
+    border-left-color:#c9d4ea;
+  }
+
+  /* ---------- Document ---------- */
+  .doc{max-width:760px}
+  .doc > p:first-of-type{font-size:17px;color:#2c3448}
+
+  .doc h2{
+    font-size:20px;
+    font-weight:750;
+    margin:52px 0 14px;
+    padding-top:8px;
+    scroll-margin-top:24px;
+    letter-spacing:-0.005em;
+  }
+  .doc h2:first-of-type{margin-top:8px}
+  .doc h3{
+    font-size:16px;
+    font-weight:700;
+    margin:26px 0 8px;
+    color:#2c3448;
+  }
+  .doc p{margin:0 0 14px}
+  .doc ul,.doc ol{margin:0 0 16px;padding-left:22px}
+  .doc li{margin:6px 0}
+  .doc strong{font-weight:700}
+
+  /* Callout */
+  .callout{
+    background:var(--accent-soft);
+    border:1px solid #d6e2ff;
+    border-left:4px solid var(--accent);
+    border-radius:10px;
+    padding:18px 20px;
+    margin:0 0 28px;
+    font-size:15.5px;
+    color:#22304d;
+  }
+  .callout p:last-child{margin-bottom:0}
+  .callout strong{color:#123a9e}
+
+  /* Tables */
+  .table-wrap{overflow-x:auto;margin:0 0 22px;border:1px solid var(--line);border-radius:var(--radius)}
+  table{width:100%;border-collapse:collapse;font-size:15px;min-width:520px}
+  th,td{text-align:left;padding:12px 16px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{background:var(--soft);font-weight:700;font-size:14px;color:#3a4460;white-space:nowrap}
+  tbody tr:last-child td{border-bottom:none}
+  code{
+    font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+    font-size:14px;
+    background:var(--soft);
+    border:1px solid var(--line);
+    border-radius:6px;
+    padding:1px 6px;
+  }
+
+  /* Contact card */
+  .contact-card{
+    background:var(--soft);
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    padding:22px 24px;
+    margin:8px 0 0;
+  }
+  .contact-card dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:8px 20px;font-size:15.5px}
+  .contact-card dt{color:var(--muted)}
+  .contact-card dd{margin:0;word-break:break-word}
+
+  /* ---------- Footer ---------- */
+  .site-footer{
+    border-top:1px solid var(--line);
+    background:var(--soft);
+    padding:32px 0;
+    font-size:14px;
+    color:var(--muted);
+  }
+  .site-footer .container{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px 24px;
+    justify-content:space-between;
+    align-items:center;
+  }
+
+  /* ---------- Responsive ---------- */
+  @media (max-width:900px){
+    .layout{grid-template-columns:1fr;gap:36px;padding-top:32px}
+    .toc{position:static;background:var(--soft);border:1px solid var(--line);border-radius:var(--radius);padding:18px 20px}
+    .toc ol{border-left:none;columns:2;column-gap:24px}
+    .toc a{padding-left:0;border-left:none}
+    .toc a:hover{border-left-color:transparent}
+    .doc{max-width:none}
+    .site-header{padding:40px 0 28px}
+  }
+  @media (max-width:560px){
+    .toc ol{columns:1}
+    .doc h2{font-size:18.5px;margin-top:42px}
+    .contact-card dl{grid-template-columns:1fr;gap:2px}
+    .contact-card dt{margin-top:10px;font-size:13px;text-transform:uppercase;letter-spacing:.05em}
+  }
+
+  @media print{
+    .toc,.site-footer{display:none}
+    .layout{display:block;padding:0}
+    .doc{max-width:none}
+    .site-header{padding:0 0 20px;background:none}
+    a{color:inherit;text-decoration:none}
+    .doc h2{page-break-after:avoid}
+    .table-wrap,.callout,.contact-card{page-break-inside:avoid}
+  }
+</style>
+</head>
+<body>
+<header class="site-header"><div class="container">
+<div class="brand"><span class="brand-dot"></span>Life Quest</div>
+<h1>Privacy Policy</h1>
+<p class="meta"><span>Last Updated: October 8, 2026</span><span>Effective Date: October 8, 2026</span><span>Version: 1.0 (draft)</span></p>
+</div></header>
+<main class="container layout">
+<nav class="toc" aria-label="Table of Contents">
+<h2>Contents</h2><ol>
+<li><a href="#overview">Overview</a></li>
+<li><a href="#local">Data Stored on Your Device</a></li>
+<li><a href="#ads">Advertising &amp; Data Collected</a></li>
+<li><a href="#sharing">Sharing &amp; Third Parties</a></li>
+<li><a href="#permissions">Permissions &amp; Connectivity</a></li>
+<li><a href="#retention">Storage, Retention &amp; Deletion</a></li>
+<li><a href="#rights">Your Choices</a></li>
+<li><a href="#security">Security</a></li>
+<li><a href="#children">Children</a></li>
+<li><a href="#changes">Policy Changes</a></li>
+<li><a href="#contact">Contact</a></li>
+</ol></nav>
+<article class="doc">
+<div class="callout"><p><strong>At a glance:</strong> Life Quest is a personal task and progress-tracking application. Your tasks, achievements, levels and other progress data are stored locally on your device and are not uploaded to a Life Quest account or developer-operated server. <strong>Advertising is different:</strong> if ads are enabled, the advertising provider may process device and usage data to deliver ads, measure their performance and prevent fraud.</p></div>
+<h2 id="overview">1. Overview</h2>
+<p>Life Quest (the “App”) is provided by <strong>[DEVELOPER NAME — REPLACE BEFORE PUBLISHING]</strong> ("we", "us"). This Privacy Policy describes data handled by the App and by advertising services integrated into it. It applies to the Android version of Life Quest. We do not require users to create an account to use the App's core features.</p>
+<h2 id="local">2. Data Stored on Your Device</h2>
+<p>Tasks, goals, experience points, levels, achievements, preferences and similar information you enter or generate in Life Quest are stored locally on your device. The App's core task and progress functions do not send this information to a developer-controlled server. We do not remotely access or sell this local content.</p>
+<p>Local app data may be removed when you clear the App's storage or uninstall it, subject to any applicable device-level backup or restore settings. We cannot recover deleted local information from our servers because we do not maintain copies of it.</p>
+<h2 id="ads">3. Advertising and Advertising Data</h2>
+<p>Life Quest may display third-party advertisements. <strong>This draft assumes that Google AdMob (Google Mobile Ads SDK) is the advertising provider. Confirm the actual SDK before publishing.</strong> Advertising requires internet access even though the App's task and progress features work offline.</p>
+<p>Where the Google Mobile Ads SDK is included and ads are requested, Google and its advertising partners may automatically collect or receive information including:</p>
+<div class="table-wrap"><table><thead><tr><th>Information</th><th>Why it may be used</th></tr></thead><tbody>
+<tr><td>IP address (which may indicate approximate location)</td><td>Ad delivery, fraud prevention and service operation</td></tr>
+<tr><td>Advertising ID, app-set ID or similar identifiers (where available)</td><td>Ad delivery, measurement, frequency control and fraud prevention</td></tr>
+<tr><td>Ad interactions and app interaction events (such as ad views and taps)</td><td>Ad measurement and analytics</td></tr>
+<tr><td>Device and diagnostic information (such as app performance or crash-related data)</td><td>Service reliability, analytics and fraud prevention</td></tr>
+</tbody></table></div>
+<p>Depending on applicable law, your location and your choices, ads may be personalized or non-personalized. Non-personalized ads may still require data processing for ad delivery, measurement, and security. Consent and privacy options will be provided where legally required and supported by the advertising provider.</p>
+<p>Google's information on its advertising privacy practices is available at <a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google Privacy Policy</a> and <a href="https://support.google.com/admob/answer/6128543" rel="noopener noreferrer">AdMob guidance</a>.</p>
+<h2 id="sharing">4. Sharing and Third Parties</h2>
+<p>We do not transmit your locally stored task and progress content to advertisers. When third-party advertising is active, the advertising SDK may collect and share the categories of information described in Section 3 with Google and its advertising partners. Their processing is governed by their applicable terms and policies.</p>
+<p>We do not operate a user-account database, and we do not sell your local task content. If you contact us by email, your message and contact information will be used to respond to your request.</p>
+<h2 id="permissions">5. Permissions and Connectivity</h2>
+<p>The core task and progress features can be used offline. An internet connection is needed to load ads and to open external links, such as this policy. Advertising libraries may require network access and access to permitted device identifiers. The exact permissions depend on the released App and installed SDKs; this policy will be updated if additional permissions or services are introduced.</p>
+<h2 id="retention">6. Storage, Retention and Deletion</h2>
+<p>Task and progress information stays on your device until you delete it using available app or device controls, clear App storage, or uninstall the App. We do not set a server retention period for this local content because we do not upload it to our own servers.</p>
+<p>Advertising data is retained and deleted according to the advertising provider's practices and applicable controls. Please consult Google's privacy materials for details. If you contact us, we retain correspondence only as needed to handle your request and comply with any applicable obligations.</p>
+<h2 id="rights">7. Your Choices and Rights</h2>
+<ul>
+<li>You can delete your local tasks and progress using available app controls or clear the App's storage / uninstall the App.</li>
+<li>You can manage or reset your Android advertising ID and applicable advertising privacy settings in your device settings.</li>
+<li>Where required by law, you may be offered a consent choice for personalized advertising.</li>
+<li>You may contact us with privacy questions or requests using the email below. Rights under local privacy law may vary by jurisdiction.</li>
+</ul>
+<h2 id="security">8. Security</h2>
+<p>Core task data is kept locally on your device; protecting access to the device helps protect it. Advertising requests and related data processing are handled by the advertising provider, which describes its security practices in its own policy. No digital system can guarantee absolute security.</p>
+<h2 id="children">9. Children's Privacy</h2>
+<p>Life Quest is not specifically designed for children. We do not knowingly collect children's personal information through developer-operated user accounts or servers. If the App is made available to children, advertising configuration and any required parental consent measures must comply with relevant laws and Google Play policies.</p>
+<h2 id="changes">10. Changes to This Policy</h2>
+<p>We may update this policy if Life Quest's features, data practices, advertising services or legal obligations change. Updates will be posted on this page with a revised "Last Updated" date.</p>
+<h2 id="contact">11. Contact Us</h2>
+<div class="contact-card"><dl>
+<dt>Application</dt><dd>Life Quest</dd>
+<dt>Developer</dt><dd>[DEVELOPER NAME — REPLACE BEFORE PUBLISHING]</dd>
+<dt>Privacy contact</dt><dd>[PRIVACY EMAIL — REPLACE BEFORE PUBLISHING]</dd>
+</dl></div>
+<p style="margin-top:24px;color:var(--muted);font-size:14px"><strong>Before publishing:</strong> Verify your advertising provider, SDKs, required consents, permissions, Play Console Data safety answers, developer name and working contact email. Remove this note and all bracketed placeholders.</p>
+</article></main>
+<footer class="site-footer"><div class="container"><div>© 2026 Life Quest</div><div>Privacy Policy · Updated October 8, 2026</div></div></footer>
+</body></html>
