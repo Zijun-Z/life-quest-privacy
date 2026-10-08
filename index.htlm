@@ -294,8 +294,8 @@
 <h2 id="contact">11. Contact Us</h2>
 <div class="contact-card"><dl>
 <dt>Application</dt><dd>Life Quest</dd>
-<dt>Developer</dt><dd>[DEVELOPER NAME — REPLACE BEFORE PUBLISHING]</dd>
-<dt>Privacy contact</dt><dd>[PRIVACY EMAIL — REPLACE BEFORE PUBLISHING]</dd>
+<dt>Developer</dt><dd>ZJ Dev</dd>
+<dt>Privacy contact</dt><dd>zjzhou06@gmail.com</dd>
 </dl></div>
 <p style="margin-top:24px;color:var(--muted);font-size:14px"><strong>Before publishing:</strong> Verify your advertising provider, SDKs, required consents, permissions, Play Console Data safety answers, developer name and working contact email. Remove this note and all bracketed placeholders.</p>
 </article></main>
